@@ -1,0 +1,33 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "Real-time chat application with React, Node.js, Express, MongoDB, and Socket.io",
+  "main": "server/server.js",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "socket.io",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Rahul Mishra <rm2778643@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahul700raj/realtime-chat-app.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
